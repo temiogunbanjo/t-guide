@@ -6,7 +6,7 @@ class PointerBox extends React.Component{
         super(props);
 
         this.state = {
-            text: 'Click here to try our new dark/light mode',
+            text: 'Click here to contact us',
             visibility: false
         };
     }
