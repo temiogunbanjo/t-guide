@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Load all fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;1,200;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="icofont.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <header class="rows" style="background-color: var(--primary-color);">
+        <h1>Home</h1>
+        <a><img class="logo" src="./DeeplugTEO.png" alt="" style="background-color: var(--primary-color); border-radius: 50%; width: 10rem; height: 10rem;"></a>
+        <i class="icofont-phone"></i>
+    </header>
+    <main>
+        <nav class="rows">
+            <button id="navigation-button-left" class="btn scroller">
+                <i class="icofont-caret-left"></i>
+            </button>
+            <div class="rows navigations">
+                <button class="rows btn">
+                    <i class="icofont-home"></i>
+                    <span>About</span>
+                </button>
+
+                <button class="rows btn">
+                    <i class="icofont-airplane"></i>
+                    <span>Virtual Tour</span>
+                </button>
+
+                <button class="rows btn">
+                    <i class="icofont-map"></i>
+                    <span>Tour Guides</span>
+                </button>
+
+                <button class="rows btn">
+                    <i class="icofont-map"></i>
+                    <span>Skill Experience</span>
+                </button>
+
+                <button class="rows btn">
+                    <i class="icofont-map"></i>
+                    <span>Our Geographical Relations</span>
+                </button>
+            </div>
+            <button id="navigation-button-down" class="btn scroller">
+                <i class="icofont-caret-down"></i>
+            </button>
+        </nav>
+
+        <section class="cols active">
+            <div class="cols center">
+                <h1>EXPLORE WITH TGUIDE GHANA</h1>
+                <h4>Your virtual journey starts with just a click</h4>
+                <button>PROCEED</button>
+            </div>
+            <video autoplay muted loop id="page-background-video">
+                <source src="./DIY Dual Screen Laptop (100IY).mp4" type="video/mp4">
+            </video>
+        </section>
+    </main>
+</body>
+</html>

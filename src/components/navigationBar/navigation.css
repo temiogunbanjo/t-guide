@@ -1,0 +1,54 @@
+
+main nav{
+    z-index: +500;
+    width: 100%;
+    position: fixed;
+    bottom: -1.2rem;
+    left: 0;
+    background-color: var(--primary-color);
+    border-radius: 100%/30%;
+    overflow-y: hidden;
+    padding: 0.8rem 1rem 1.5rem;
+}
+
+main nav button{
+    padding: 2rem !important;
+    color: white;
+    font-size: 20px !important;
+    font-weight: 300;
+    background-color: transparent;
+    border: none;
+    transform-origin: center;
+    transition: font-size 0.2s ease-in;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+main nav div.navigations{
+    width: 100%;
+    justify-content: space-around;
+}
+
+main nav div.navigations button{
+    margin: 2px 0;
+}
+
+main nav div.navigations button > i{
+    padding: 0 1.5rem 0 0 !important;
+}
+
+main nav div.navigations button > span{
+    padding-right: 0.5rem;
+    font-size: 15px;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+main nav div.navigations button:hover{
+    /* transform: scale(1.08); */
+    font-size: 23px !important;
+    border-radius: 8px;
+    /* background-color: rgb(5, 104, 197); */
+    box-shadow: inset 2px 2px 9px rgba(20, 8, 8, 0.3);
+    color: var(--nav-primary-color);
+}

@@ -1,0 +1,143 @@
+body{
+    height: 100vh;
+}
+
+#page-background-video{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -999;
+    mix-blend-mode: multiply;
+    -webkit-filter: brightness(-15px);
+    filter: brightness(-15px);
+    /* border: 2px solid red; */
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./wallpaperflare.com_wallpaper.jpg'); */
+}
+
+main, main nav, header{
+    transition: height 0.5s ease-out, margin 0.5s ease-out, bottom 0.5s ease-out;
+}
+
+main{
+    /* border: 4px solid purple; */
+    height: calc(100% - 18.1rem);
+}
+
+main nav{
+    z-index: +500;
+    width: 100%;
+    position: fixed;
+    bottom: -1.2rem;
+    left: 0;
+    background-color: var(--primary-color);
+    border-radius: 100%/30%;
+    overflow-y: hidden;
+    padding: 0.8rem 1rem 1.2rem;
+}
+
+main nav button{
+    padding: 2rem !important;
+    color: white;
+    font-size: 20px !important;
+    font-weight: 300;
+    background-color: transparent;
+    border: none;
+    transform-origin: center;
+    transition: font-size 0.2s ease-in;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+main nav div.navigations{
+    width: 100%;
+    justify-content: space-around;
+}
+
+main nav div.navigations button{
+    margin: 2px 0;
+}
+
+main nav div.navigations button > i{
+    padding: 0 1.5rem 0 0 !important;
+}
+
+main nav div.navigations button > span{
+    padding-right: 0.8rem;
+    font-size: 15px;
+    text-transform: capitalize;
+    text-align: left;
+    /* text-shadow: -1px -1px 2px #aaa; */
+}
+
+main nav div.navigations button:hover{
+    /* transform: scale(1.08); */
+    font-size: 23px !important;
+    border-radius: 5px;
+    /* background-color: rgb(5, 104, 197); */
+    box-shadow: inset 2px 2px 7px rgba(0, 0, 0, 0.2);
+    color: var(--nav-primary-color);
+}
+
+main section{
+    position: relative;
+    font-weight: 300;
+    box-shadow: inset 2px 2px 7px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: rgb(218, 218, 218);
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    clip-path: circle(0 at 10% 40%);
+    background-position: center;
+    background-size: cover;
+    padding: 0 6%;
+    transition: clip-path 1s ease-in;
+}
+
+main section.active{
+    clip-path: circle(100% at 50% 40%);
+}
+
+main section h1, main section h1{
+    line-height: 1.5;
+}
+
+main section h1{
+    letter-spacing: 2px;
+    font-size: 48px;
+    margin: 0;
+}
+
+main section h4{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+main section button{
+    margin-top: 2rem;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-transform: lowercase;
+    max-width: 300px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--nav-primary-color);
+    padding: 1.6rem 4.8rem;
+}
+
+body.fullscreen header{
+    margin-top: -12rem;
+}
+
+body.fullscreen main{
+    height: 100%;
+}
+
+body.fullscreen main nav{
+    bottom: -9rem;
+}
