@@ -13,6 +13,7 @@ html{
   scroll-behavior: smooth;
   --primary-color: #11111a;
   --nav-primary-color: #ec3535;
+  --pointer-color: red;
 }
 
 body{

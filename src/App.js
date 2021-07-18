@@ -38,7 +38,7 @@ const navigationSections = [
     }
   },{
     name: "Skill Experience",
-    icon: "icofont-map",
+    icon: "icofont-wrench",
     init: () => {
       // Do something when section is selected
       console.log(4)
@@ -91,10 +91,10 @@ class App extends React.Component {
   render(){
     return (
       <React.Fragment>
-        <PointerBox/>
+        <PointerBox text='Click here to contact us'/>
         <AppHeader currentSection={this.state.currentSection} sections={navigationSections}/>
         <MainComponent currentSection={this.state.currentSection} sections={navigationSections} backgroundVideo={backgroundVideo} navigationHandler={this.navigationHandler}/>
-        <button className="rows center fullscreen-toggle-button" onClick={function(e){document.querySelector('body').classList.toggle('fullscreen', false)}}>
+        <button title="Toggle fullscreen off" className="rows center fullscreen-toggle-button" onClick={function(e){document.querySelector('body').classList.toggle('fullscreen', false)}}>
           <i className="icofont-close"></i>
         </button>
       </React.Fragment>

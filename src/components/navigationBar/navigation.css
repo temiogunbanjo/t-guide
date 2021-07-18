@@ -1,5 +1,6 @@
 
 main nav{
+    /* display: none !important; */
     z-index: +500;
     width: 100%;
     position: fixed;
@@ -26,11 +27,11 @@ main nav button{
 
 main nav div.navigations{
     width: 100%;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 
 main nav div.navigations button{
-    margin: 2px 0;
+    margin: 2px auto;
 }
 
 main nav div.navigations button > i{
@@ -52,3 +53,30 @@ main nav div.navigations button:hover{
     box-shadow: inset 2px 2px 9px rgba(20, 8, 8, 0.3);
     color: var(--nav-primary-color);
 }
+
+/* For Mobile Users Only */
+@media only screen and (max-width:800px){
+    main nav button.scroller{
+        position: absolute;
+        padding: 1.9rem 1rem !important;
+        /* border: 3px solid red; */
+        background-color: var(--primary-color);
+    }
+
+    main nav div.navigations{
+        width: calc(100% - 5rem);
+        /* border: 3px solid red; */
+        margin: 0 auto;
+        overflow-x: auto;
+    }
+
+    main nav button.scroller:first-child{
+        left: 0;
+    }
+
+    main nav button.scroller:last-child{
+        right: 0;
+    }
+}
+
+

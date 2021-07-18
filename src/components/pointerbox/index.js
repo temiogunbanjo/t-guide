@@ -6,18 +6,18 @@ class PointerBox extends React.Component{
         super(props);
 
         this.state = {
-            text: 'Click here to contact us',
+            text: props.text,
             visibility: false
         };
     }
 
     componentDidMount(){
-        let timeout = Math.round((Math.random() * 30) + 8);
+        const timeout = 10;
 
-        let hidePointer = () => {
+        const hidePointer = () => {
             this.setState({visibility: false});
         };
-        let showPointer = () => {
+        const showPointer = () => {
             this.setState({visibility: true});
             setTimeout(hidePointer, 10000);
         };
