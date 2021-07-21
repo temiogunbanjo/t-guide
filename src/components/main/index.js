@@ -103,7 +103,7 @@ function MarketSection(props) {
     return (
         <div className="cols center market-section-inner">
             <h1>Welcome to Marketplace</h1>
-            {/* <h4>Your virtual journey starts with just a click</h4> */}
+            <h4>Take a trip in your favourite market place</h4>
             <div className="rows destination-container">
                 {items.map((anItem, index) => <MarketItem key={index} image={anItem.image} name={anItem.name} description={anItem.description}/>)}
             </div>
