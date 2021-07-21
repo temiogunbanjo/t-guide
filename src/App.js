@@ -14,39 +14,54 @@ const navigationSections = [
   {
     name: 'Home',
     icon: 'icofont-home',
+    isInNavigationBar: true,
     init: () => {
       // Do something when section is selected
-      console.log(1)
-      return 1;
+      console.log(0)
+      return 0;
     }
   },{
     name: "Destinations",
     icon: "icofont-google-map",
+    isInNavigationBar: true,
     init: () => {
       // Do something when section is selected
       document.querySelector('body').classList.toggle('fullscreen', true);
-      console.log(2);
-      return 2;
+      console.log(1);
+      return 1;
     }
   },{
     name: "Tour Guides",
     icon: "icofont-map",
+    isInNavigationBar: true,
     init: () => {
       // Do something when section is selected
-      console.log(3)
+      console.log(2)
+      return 2;
+    }
+  },{
+    name: "Marketplace",
+    icon: "icofont-food-cart",
+    isInNavigationBar: true,
+    init: () => {
+      // Do something when section is selected
+      document.querySelector('body').classList.toggle('fullscreen', true);
+      console.log(3);
       return 3;
     }
   },{
-    name: "Skill Experience",
-    icon: "icofont-wrench",
+    name: "Register",
+    icon: "icofont-power",
+    isInNavigationBar: true,
     init: () => {
       // Do something when section is selected
       console.log(4)
       return 4;
     }
-  },{
-    name: "Register",
+  }, {
+    name: "Hate",
     icon: "icofont-power",
+    isInNavigationBar: false,
     init: () => {
       // Do something when section is selected
       console.log(5)
