@@ -3,9 +3,9 @@ import React from 'react';
 
 function NavigationButton(props) {
     return (
-        <button className="rows btn" id={props.id} onClick={props.navigationHandler}>
-            <i className={props.icon} id={props.id}></i>
-            <span id={props.id} className="hide-on-mobile">{props.name}</span>
+        <button className="rows btn" data-id={ props.id } onClick={ props.navigationHandler }>
+            <i className={ props.icon } data-id={ props.id }></i>
+            <span data-id={ props.id } className="hide-on-mobile">{ props.name}</span>
         </button>
     );
 }
@@ -19,7 +19,7 @@ function Navigation(props) {
             <div className="rows navigations">
                 { 
                     props.sections.map((aSection, index) => {
-                        return <NavigationButton key={index} id={index} name={aSection.name} icon={aSection.icon} navigationHandler={props.navigationHandler}/>
+                        return <NavigationButton key={ index } id={ index } name={ aSection.name } icon={ aSection.icon } navigationHandler={ props.navigationHandler }/>
                     })
                 }
             </div>

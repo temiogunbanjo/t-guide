@@ -15,57 +15,61 @@ const navigationSections = [
     name: 'Home',
     icon: 'icofont-home',
     isInNavigationBar: true,
-    init: () => {
+    init: (options) => {
       // Do something when section is selected
+      options = (options) ? JSON.parse(options) : null;
       console.log(0)
-      return 0;
+      return options;
     }
   },{
     name: "Destinations",
     icon: "icofont-google-map",
     isInNavigationBar: true,
-    init: () => {
+    init: (options) => {
       // Do something when section is selected
+      options = (options) ? JSON.parse(options) : null;
       document.querySelector('body').classList.toggle('fullscreen', true);
       console.log(1);
-      return 1;
+      return options;
     }
   },{
-    name: "Tour Guides",
-    icon: "icofont-map",
+    name: "Get A Guide",
+    icon: "icofont-offside",
     isInNavigationBar: true,
-    init: () => {
+    init: (options) => {
       // Do something when section is selected
+      options = (options) ? JSON.parse(options) : null;
       console.log(2)
-      return 2;
+      return options;
     }
   },{
-    name: "Marketplace",
-    icon: "icofont-food-cart",
+    name: "Virtual Experience",
+    icon: "icofont-lens",
     isInNavigationBar: true,
-    init: () => {
+    init: (options) => {
+      // Do something when section is selected
+      options = (options) ? JSON.parse(options) : null;
+      console.log(3, options);
+      return options;
+    }
+  },{
+    name: "About Destination",
+    icon: "icofont-food-cart",
+    isInNavigationBar: false,
+    init: (options) => {
       // Do something when section is selected
       document.querySelector('body').classList.toggle('fullscreen', true);
-      console.log(3);
-      return 3;
+      console.log(4, options);
+      return options;
     }
   },{
-    name: "Register",
-    icon: "icofont-power",
-    isInNavigationBar: true,
-    init: () => {
-      // Do something when section is selected
-      console.log(4)
-      return 4;
-    }
-  }, {
-    name: "Hate",
+    name: "About Guide",
     icon: "icofont-power",
     isInNavigationBar: false,
-    init: () => {
+    init: (options) => {
       // Do something when section is selected
-      console.log(5)
-      return 5;
+      console.log(5, options)
+      return options;
     }
   }
 ];
@@ -79,37 +83,49 @@ class App extends React.Component {
       currentSection: 0,
       sectionInit: navigationSections[0].init()
     }
+
+    // Handles navigation on navigation bar
     this.navigationHandler = (ev) => {
       this.setState((prevState) => {
         // console.log(ev.target.id);
+        const idOfSection = parseInt(ev.target.getAttribute('data-id'), 10);
+        const options = (ev.target.hasAttribute('data-options')) ? ev.target.getAttribute('data-options') : null;
         const changedState = {
-          currentSection: parseInt(ev.target.id, 10),
-          sectionInit: navigationSections[parseInt(ev.target.id, 10)].init()
+          currentSection: idOfSection,
+          sectionInit: navigationSections[idOfSection].init(options)
         };
         
         const newState = Object.assign({}, prevState, changedState);
         return newState;
       });
     }
-  }
 
-  componentDidUpdate(){
-    // console.log(this.state);
+    // Handles automatic fullscreen toggling
+    this.fullScreenAfter30seconds = () => {
+      const TIMEOUT = 30;
+      setTimeout(function(){
+        document.querySelector('body').classList.toggle('fullscreen', true);
+      }, TIMEOUT * 1000);
+    }
+
+    // Handler for toggling fullscreen off
+    this.fullscreenToggler = (ev) => {
+      document.querySelector('body').classList.toggle('fullscreen', false);
+      this.fullScreenAfter30seconds();
+    }
   }
 
   componentDidMount(){
-    setTimeout(function(){
-      document.querySelector('body').classList.toggle('fullscreen', true);
-    }, 20000);
+    this.fullScreenAfter30seconds();
   }
 
   render(){
     return (
       <React.Fragment>
         <PointerBox text='Click here to contact us'/>
-        <AppHeader currentSection={this.state.currentSection} sections={navigationSections}/>
-        <MainComponent currentSection={this.state.currentSection} sections={navigationSections} backgroundVideo={backgroundVideo} navigationHandler={this.navigationHandler}/>
-        <button title="Toggle fullscreen off" className="rows center fullscreen-toggle-button" onClick={function(e){document.querySelector('body').classList.toggle('fullscreen', false)}}>
+        <AppHeader currentSection={ this.state.currentSection } sections={ navigationSections }/>
+        <MainComponent currentSection={ this.state.currentSection } sections={ navigationSections } backgroundVideo={ backgroundVideo } navigationHandler={ this.navigationHandler } sectionData={ this.state.sectionInit }/>
+        <button title="Toggle fullscreen off" className="rows center fullscreen-toggle-button" onClick={ this.fullscreenToggler }>
           <i className="icofont-close"></i>
         </button>
       </React.Fragment>

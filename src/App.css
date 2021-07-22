@@ -68,10 +68,11 @@ body.fullscreen .fullscreen-toggle-button{
   }
 
   body .fullscreen-toggle-button{
-    right: 4rem;
+    padding: 1.5rem;
+    right: 2rem;
   }
 
   body.fullscreen .fullscreen-toggle-button{
-    top: 1rem;
+    top: 1.5rem;
   }
 }

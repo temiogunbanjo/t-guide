@@ -17,14 +17,14 @@ main .destination img{
 }
 
 main .destination .content{
-    padding: 2.2rem 2.5rem 2rem;
+    padding: 2.2rem 3rem 2rem;
     height: 100%;
 }
 
 main .destination .description{
     font-size: 14px;
     text-align: left;
-    margin: 0 0 0.5rem;
+    margin: 0 0 2rem;
 }
 
 main .destination .button-container{
@@ -32,12 +32,17 @@ main .destination .button-container{
     margin-top: auto;
 }
 
+main .destination .button-container > *{
+    margin: 0 2px;
+    width: 50%;
+    max-width: 110px;
+}
 
 /* For Mobile Users Only */
 @media only screen and (max-width:800px){
     main .destination{
-        /* border: 3px solid green; */
-        width: calc(100% - 4rem);
-        margin: 0 2rem;
+        max-width: 400px;
+        width: calc(100% - 3rem);
+        margin: 0 1.5rem;
     }
 }
