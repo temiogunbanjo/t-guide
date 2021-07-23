@@ -9,7 +9,7 @@ import AppHeader from './components/header';
 import MainComponent from './components/main';
 
 // import other resources
-import backgroundVideo from './resources/videos/clip.mp4'
+import backgroundVideo from './resources/videos/Ghana Drone Tour.mp4'
 
 // ALL SECTIONS THAT CAN BE NAVIGATED TO
 const NAVIGATIONSECTIONS = [

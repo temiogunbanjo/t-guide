@@ -4,18 +4,19 @@ import Navigation from '../navigationBar';
 import Destination from './destinationItem';
 import GuideItem from './guideitem';
 import pic from '../../resources/images/julian-schultz-JP_nc0jEakE-unsplash.jpg';
+import aVideo from '../../resources/videos/Ghana Drone Tour.mp4'; // Dummy example
 
 // Contains all destinations and their details
 const DESTINATIONS = [
     {
         image: "https://static.wixstatic.com/media/d0a4b2_9ea4562bbfc94a5c991ec810637f7bb5.png/v1/fill/w_740,h_494,al_c,lg_1,q_95/d0a4b2_9ea4562bbfc94a5c991ec810637f7bb5.webp",
-        video: "",
+        video: aVideo,
         name: "Vume Pottery",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum assumenda ut, facilis, soluta autem vero earum suscipit consectetur in officiis sint possimus adipisci velit eos. Quis quos eius excepturi eveniet?"
     },
     {
         image: "https://static.wixstatic.com/media/d0a4b2_9ea4562bbfc94a5c991ec810637f7bb5.png/v1/fill/w_740,h_494,al_c,lg_1,q_95/d0a4b2_9ea4562bbfc94a5c991ec810637f7bb5.webp",
-        video: "",
+        video: "", // can also be a link to a video
         name: "kyabobo",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum assumenda ut, facilis, soluta autem vero earum suscipit consectetur in officiis sint possimus adipisci velit eos. Quis quos eius excepturi eveniet?"
     }, {
