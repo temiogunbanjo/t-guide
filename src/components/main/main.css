@@ -79,9 +79,10 @@ main section button:hover{
 main .virtual-tour-video{
     width: 100%;
     max-width: 900px;
-    height: 500px;
+    height: 350px;
     border-radius: 5px;
-    display: inline-block;
+    display: block;
+    margin: 1rem auto;
 }
 
 main .destination-container, main .market-container{
