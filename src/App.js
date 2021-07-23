@@ -10,14 +10,16 @@ import MainComponent from './components/main';
 
 // import other resources
 import backgroundVideo from './resources/videos/clip.mp4'
-const navigationSections = [
+
+// ALL SECTIONS THAT CAN BE NAVIGATED TO
+const NAVIGATIONSECTIONS = [
   {
     name: 'Home',
     icon: 'icofont-home',
     isInNavigationBar: true,
     init: (options) => {
       // Do something when section is selected
-      options = (options) ? JSON.parse(options) : null;
+      options = (options) ? options : null;
       console.log(0)
       return options;
     }
@@ -27,7 +29,7 @@ const navigationSections = [
     isInNavigationBar: true,
     init: (options) => {
       // Do something when section is selected
-      options = (options) ? JSON.parse(options) : null;
+      options = (options) ? options : null;
       document.querySelector('body').classList.toggle('fullscreen', true);
       console.log(1);
       return options;
@@ -38,7 +40,7 @@ const navigationSections = [
     isInNavigationBar: true,
     init: (options) => {
       // Do something when section is selected
-      options = (options) ? JSON.parse(options) : null;
+      options = (options) ? options : null;
       console.log(2)
       return options;
     }
@@ -48,8 +50,8 @@ const navigationSections = [
     isInNavigationBar: true,
     init: (options) => {
       // Do something when section is selected
-      options = (options) ? JSON.parse(options) : null;
-      console.log(3, options);
+      options = (options) ? options : null;
+      console.log(3);
       return options;
     }
   },{
@@ -58,8 +60,9 @@ const navigationSections = [
     isInNavigationBar: false,
     init: (options) => {
       // Do something when section is selected
+      options = (options) ? options : null;
       document.querySelector('body').classList.toggle('fullscreen', true);
-      console.log(4, options);
+      console.log(4);
       return options;
     }
   },{
@@ -68,7 +71,8 @@ const navigationSections = [
     isInNavigationBar: false,
     init: (options) => {
       // Do something when section is selected
-      console.log(5, options)
+      options = (options) ? options : null;
+      console.log(5)
       return options;
     }
   }
@@ -81,7 +85,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       currentSection: 0,
-      sectionInit: navigationSections[0].init()
+      sectionInit: NAVIGATIONSECTIONS[0].init()
     }
 
     // Handles navigation on navigation bar
@@ -92,7 +96,7 @@ class App extends React.Component {
         const options = (ev.target.hasAttribute('data-options')) ? ev.target.getAttribute('data-options') : null;
         const changedState = {
           currentSection: idOfSection,
-          sectionInit: navigationSections[idOfSection].init(options)
+          sectionInit: NAVIGATIONSECTIONS[idOfSection].init(options)
         };
         
         const newState = Object.assign({}, prevState, changedState);
@@ -123,8 +127,8 @@ class App extends React.Component {
     return (
       <React.Fragment>
         <PointerBox text='Click here to contact us'/>
-        <AppHeader currentSection={ this.state.currentSection } sections={ navigationSections }/>
-        <MainComponent currentSection={ this.state.currentSection } sections={ navigationSections } backgroundVideo={ backgroundVideo } navigationHandler={ this.navigationHandler } sectionData={ this.state.sectionInit }/>
+        <AppHeader currentSection={ this.state.currentSection } sections={ NAVIGATIONSECTIONS }/>
+        <MainComponent currentSection={ this.state.currentSection } sections={ NAVIGATIONSECTIONS } backgroundVideo={ backgroundVideo } navigationHandler={ this.navigationHandler } sectionData={ this.state.sectionInit }/>
         <button title="Toggle fullscreen off" className="rows center fullscreen-toggle-button" onClick={ this.fullscreenToggler }>
           <i className="icofont-close"></i>
         </button>
