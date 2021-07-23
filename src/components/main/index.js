@@ -10,55 +10,65 @@ import aVideo from '../../resources/videos/Ghana Drone Tour.mp4'; // Dummy examp
 const DESTINATIONS = [
     {
         image: "https://static.wixstatic.com/media/d0a4b2_9ea4562bbfc94a5c991ec810637f7bb5.png/v1/fill/w_740,h_494,al_c,lg_1,q_95/d0a4b2_9ea4562bbfc94a5c991ec810637f7bb5.webp",
-        video: aVideo,
+        video: "https://www.youtube.com/embed/CmeqLpbj0I4",
         name: "Vume Pottery",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum assumenda ut, facilis, soluta autem vero earum suscipit consectetur in officiis sint possimus adipisci velit eos. Quis quos eius excepturi eveniet?"
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum assumenda ut, facilis, soluta autem vero earum suscipit consectetur in officiis sint possimus adipisci velit eos. Quis quos eius excepturi eveniet?",
+        location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7941.2907345136855!2d-0.2279730982244871!3d5.6192666896778185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf99519d280a59%3A0xd2c0850c11243fa4!2sGH%20Schools!5e0!3m2!1sen!2sgh!4v1616658821973!5m2!1sen!2sgh"
     },
     {
         image: "https://static.wixstatic.com/media/d0a4b2_9ea4562bbfc94a5c991ec810637f7bb5.png/v1/fill/w_740,h_494,al_c,lg_1,q_95/d0a4b2_9ea4562bbfc94a5c991ec810637f7bb5.webp",
         video: "", // can also be a link to a video
-        name: "kyabobo",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum assumenda ut, facilis, soluta autem vero earum suscipit consectetur in officiis sint possimus adipisci velit eos. Quis quos eius excepturi eveniet?"
+        name: "Kyabobo",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum assumenda ut, facilis, soluta autem vero earum suscipit consectetur in officiis sint possimus adipisci velit eos. Quis quos eius excepturi eveniet?",
+        location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7941.2907345136855!2d-0.2279730982244871!3d5.6192666896778185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf99519d280a59%3A0xd2c0850c11243fa4!2sGH%20Schools!5e0!3m2!1sen!2sgh!4v1616658821973!5m2!1sen!2sgh"
     }, {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Inside_view_of_the_Fort_Prinzenstein_in_Keta%2C_Ghana._9.jpg/320px-Inside_view_of_the_Fort_Prinzenstein_in_Keta%2C_Ghana._9.jpg",
         video: "",
         name: "Fort Prinzenstein",
-        description: "Lorem ipsum dolor colr et sor skskkdk sdndjnkdnknkds md nkdknjksdk"
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum assumenda ut, facilis, soluta autem vero earum suscipit consectetur in officiis sint possimus adipisci velit eos. Quis quos eius excepturi eveniet?",
+        location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7941.2907345136855!2d-0.2279730982244871!3d5.6192666896778185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf99519d280a59%3A0xd2c0850c11243fa4!2sGH%20Schools!5e0!3m2!1sen!2sgh!4v1616658821973!5m2!1sen!2sgh"
     }, {
         image: pic,
         video: "",
         name: "Volta Lake",
-        description: "Cum assumenda ut, facilis, soluta autem vero earum suscipit consectetur in officiis sint possimus adipisci velit eos"
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum assumenda ut, facilis, soluta autem vero earum suscipit consectetur in officiis sint possimus adipisci velit eos. Quis quos eius excepturi eveniet?",
+        location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7941.2907345136855!2d-0.2279730982244871!3d5.6192666896778185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf99519d280a59%3A0xd2c0850c11243fa4!2sGH%20Schools!5e0!3m2!1sen!2sgh!4v1616658821973!5m2!1sen!2sgh"
     }, {
         image: pic,
         video: "",
         name: "Wli Waterfall",
-        description: "Lorem ipsum dolor colr et sor skskkdk sdndjnkdnknkds md nkdknjksdk"
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum assumenda ut, facilis, soluta autem vero earum suscipit consectetur in officiis sint possimus adipisci velit eos. Quis quos eius excepturi eveniet?",
+        location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7941.2907345136855!2d-0.2279730982244871!3d5.6192666896778185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf99519d280a59%3A0xd2c0850c11243fa4!2sGH%20Schools!5e0!3m2!1sen!2sgh!4v1616658821973!5m2!1sen!2sgh"
     },{
         image: pic,
         video: "",
         name: "Tafi Atome Monkey Sanctuary",
-        description: "Lorem ipsum dolor colr et sor skskkdk sdndjnkdnknkds md nkdknjksdk"
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum assumenda ut, facilis, soluta autem vero earum suscipit consectetur in officiis sint possimus adipisci velit eos. Quis quos eius excepturi eveniet?",
+        location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7941.2907345136855!2d-0.2279730982244871!3d5.6192666896778185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf99519d280a59%3A0xd2c0850c11243fa4!2sGH%20Schools!5e0!3m2!1sen!2sgh!4v1616658821973!5m2!1sen!2sgh"
     },{
         image: pic,
         video: "",
         name: "Tafi Abuipe Cultural Centre",
-        description: "Lorem ipsum dolor colr et sor skskkdk sdndjnkdnknkds md nkdknjksdk"
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum assumenda ut, facilis, soluta autem vero earum suscipit consectetur in officiis sint possimus adipisci velit eos. Quis quos eius excepturi eveniet?",
+        location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7941.2907345136855!2d-0.2279730982244871!3d5.6192666896778185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf99519d280a59%3A0xd2c0850c11243fa4!2sGH%20Schools!5e0!3m2!1sen!2sgh!4v1616658821973!5m2!1sen!2sgh"
     },{
         image: pic,
         video: "",
         name: "Mountain Afadzato",
-        description: "Lorem ipsum dolor colr et sor skskkdk sdndjnkdnknkds md nkdknjksdk"
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum assumenda ut, facilis, soluta autem vero earum suscipit consectetur in officiis sint possimus adipisci velit eos. Quis quos eius excepturi eveniet?",
+        location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7941.2907345136855!2d-0.2279730982244871!3d5.6192666896778185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf99519d280a59%3A0xd2c0850c11243fa4!2sGH%20Schools!5e0!3m2!1sen!2sgh!4v1616658821973!5m2!1sen!2sgh"
     },{
         image: pic,
         video: "",
         name: "Volta National Museum",
-        description: "Lorem ipsum dolor colr et sor skskkdk sdndjnkdnknkds md nkdknjksdk"
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum assumenda ut, facilis, soluta autem vero earum suscipit consectetur in officiis sint possimus adipisci velit eos. Quis quos eius excepturi eveniet?",
+        location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7941.2907345136855!2d-0.2279730982244871!3d5.6192666896778185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf99519d280a59%3A0xd2c0850c11243fa4!2sGH%20Schools!5e0!3m2!1sen!2sgh!4v1616658821973!5m2!1sen!2sgh"
     },{
         image: pic,
         video: "",
         name: "Atorkor Slave Market",
-        description: "Lorem ipsum dolor colr et sor skskkdk sdndjnkdnknkds md nkdknjksdk"
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum assumenda ut, facilis, soluta autem vero earum suscipit consectetur in officiis sint possimus adipisci velit eos. Quis quos eius excepturi eveniet?",
+        location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7941.2907345136855!2d-0.2279730982244871!3d5.6192666896778185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf99519d280a59%3A0xd2c0850c11243fa4!2sGH%20Schools!5e0!3m2!1sen!2sgh!4v1616658821973!5m2!1sen!2sgh"
     },
 ];
 
@@ -78,11 +88,19 @@ function VTourSection(props) {
 
     console.log({parsedDetails});
     return (
-        <div className="cols center">
-            <h1>{ parsedDetails.name }</h1>
-            <video autoPlay loop controls className="virtual-tour-video">
+        <div className="cols">
+            <button style={{marginRight: "auto"}} onClick={ props.navigationHandler } data-id="1" className="back-button-style">
+                <i data-id="1" className="icofont-caret-left" style={{fontSize: "1.8rem"}}></i>
+                <span data-id="1">Go back</span>
+            </button>
+            <h1 style={{ width: "100%", textAlign: "left" }}>{ parsedDetails.name }</h1>
+            <span style={{ width: "100%", textAlign: "left", fontSize: "1.6rem" }}>{ parsedDetails.description }</span>
+            <div className="iframe-wrapper">
+                <iframe src={ parsedDetails.video } className="virtual-tour-iframe"></iframe>
+            </div>
+            {/* <video autoPlay loop controls className="virtual-tour-video">
                 <source src={ parsedDetails.video } type="video/mp4" />
-            </video>
+            </video> */}
         </div>
     );
 }
@@ -93,10 +111,32 @@ function DestinationDetails(props) {
 
     return (
         <div className="cols destination-details-section-inner">
-            <h1>{ parsedDetails.name }</h1>
-            <img src={ parsedDetails.image } alt={ parsedDetails.name.toLowerCase() }/>
-            <span style={{fontSize: "18px"}}>{ parsedDetails.description }</span>
-            <button data-id="1" onClick={ props.navigationHandler }>Go back</button>
+            <div className="rows" style={{justifyContent: "space-between", width: "100%", marginBottom: "1rem"}}>
+                <button onClick={ props.navigationHandler } data-id="1" className="back-button-style">
+                    <i data-id="1" className="icofont-arrow-left" style={{fontSize: "1.8rem"}}></i>
+                    <span data-id="1" style={{marginLeft: "0.5rem"}}>Go back</span>
+                </button>
+                <button onClick={ props.navigationHandler } data-id="2" className="back-button-style">
+                    <span data-id="2" style={{marginRight: "0.5rem"}}>Tour Guides</span>
+                    <i data-id="2" className="icofont-arrow-right" style={{fontSize: "1.8rem"}}></i>
+                </button>
+            </div>
+
+            <h1 style={{ width: "100%", textAlign: "left" }}>{ parsedDetails.name }</h1>
+            <span style={{width: "100%", textAlign: "left", fontSize: "16px"}}>{ parsedDetails.description }</span>
+            <div className="iframe-wrapper">
+                <img src={ parsedDetails.image } alt={ parsedDetails.name.toLowerCase() }/>
+            </div>
+
+            <h4 style={{ width: "100%", textAlign: "left", letterSpacing: "0" }}>Location:</h4>
+            <div className="iframe-wrapper">
+                <iframe src={ parsedDetails.location } className="virtual-tour-iframe" crossOrigin></iframe>
+            </div>
+            
+            <button onClick={ props.navigationHandler } data-id="2">Get A Tour Guide</button>
+            {/* <video autoPlay loop controls className="virtual-tour-video">
+                <source src={ parsedDetails.video } type="video/mp4" />
+            </video> */}
         </div>
     );
 }
@@ -123,8 +163,10 @@ function GuideDetails(props) {
     const parsedDetails = (JSON.parse(details)) ? JSON.parse(details) : {};
     return (
         <div className="cols center">
-            <h1>{ parsedDetails.name }</h1>
-            <h4>{ parsedDetails.description }</h4>
+            <img src={ parsedDetails.image } alt={ parsedDetails.name.toLowerCase() } style={{borderRadius: "50%", width: "250px", height: "250px"}}/>
+            <h1 style={{marginBottom: "0"}}>{ parsedDetails.name }</h1>
+            <span style={{fontSize: "1.3rem", marginBottom: "1rem"}}>4.2 / 5.0 Star Rating</span>
+            <span style={{fontSize: "1.6rem"}}>{ parsedDetails.description }</span>
             <button data-id="2" onClick={ props.navigationHandler }>Go back</button>
         </div>
     );

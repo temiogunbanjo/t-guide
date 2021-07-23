@@ -23,7 +23,7 @@ function GuideItem(props){
                 <span className="name" style={nameElementStyle}>{ details.name }</span>
                 <span className="line-clamp line-clamp-5 description">{ details.description }</span>
                 <div className="rows button-container">
-                    <button style={ buttonStyle } onClick={ props.handler } data-id="5" data-options={ guideDetails }>Check Out</button>
+                    <button style={ buttonStyle } onClick={ props.handler } data-id="5" data-options={ guideDetails }>View Profile</button>
                 </div>
             </div>
         </div>
