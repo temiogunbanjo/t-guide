@@ -22,7 +22,7 @@ class GuideDetails extends React.Component {
   componentDidMount() {
     document.querySelector("main").classList.toggle("no-video", true);
 
-    this.context.setCurrentSection(4);
+    this.context.setCurrentSection(5);
 
     const {
       match: { params },
@@ -56,18 +56,7 @@ class GuideDetails extends React.Component {
                   crossOrigin="true"
                 />
                 <div></div>
-                <div
-                  className="cols"
-                  style={{
-                    marginLeft: "auto",
-                    marginRight: "5rem",
-                    // border: "1px solid red",
-                    alignItems: "center",
-                    color: "white",
-                    fontSize: "1.6rem",
-                    fontWeight: "400",
-                  }}
-                >
+                <div className="cols guide-rating-wrap">
                   <span
                     style={{
                       fontSize: isRated ? "2.4rem" : "1.1rem",

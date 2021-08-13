@@ -145,6 +145,16 @@ main .guide-profile{
     
 }
 
+main .guide-profile .guide-rating-wrap{
+    margin-left: auto;
+    margin-right: 5rem;
+    /* border: 1px solid red; */
+    align-items: center;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
 main .guide-profile .cover-picture{
     position: relative;
     width: 100%;
@@ -155,6 +165,10 @@ main .guide-profile .cover-picture{
     background-position: bottom;
     background-image: url("../../resources/images/scene2.png");
 }
+
+/* main .guide-profile .cover-picture > *{
+    border: 1px solid red;
+} */
 
 main .guide-profile .profile-picture{
     position: absolute;
@@ -199,6 +213,24 @@ main .guide-profile .profile-picture{
 
     main .market-container{
         max-width: calc(100% - 2rem);
+    }
+
+    main .guide-profile .cover-picture{
+        align-items: center;
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    main .guide-profile .guide-rating-wrap{
+        margin-left: unset;
+        margin-right: unset;
+        margin-top: 1rem;
+    }
+
+    main .guide-profile .profile-picture{
+        position: relative;
+        bottom: unset;
+        left: unset;
     }
 }
 

@@ -102,6 +102,7 @@ class AppContextProvider extends React.Component {
           )
             dataShow = false;
     
+          // eslint-disable-next-line
           const shouldShowVideo = eval(dataShow);
           document
             .querySelector("main")
