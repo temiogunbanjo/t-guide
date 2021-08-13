@@ -53,6 +53,22 @@ main .notice a:visited{
   color: white;
 }
 
+.star.rating{
+  margin-right: 3px;
+}
+
+.star.rating polygon{
+  fill: #d8d8d8;
+}
+
+.star.rating[data-rating="1"] polygon{
+  fill: #ffd700;
+}
+
+.star.rating[data-rating="0.5"] polygon{
+  fill: url("#grad1");
+}
+
 .btn{
   display: block;
   padding: 1rem;

@@ -16,18 +16,9 @@ main section{
     background-position: center;
     background-size: cover;
     padding: 4rem 6%;
-    transition: all 0.3s ease-in;
+    transition: all 0.1s ease-in;
     /* border: 3px solid red; */
     overflow-y: auto;
-}
-
-main section .back-button-style{
-    color: #555;
-    background-color: transparent;
-    margin: 0;
-    box-shadow: none;
-    padding: 0;
-    color: black;
 }
 
 main.no-video section{
@@ -52,7 +43,7 @@ main section h1, main section h4{
 }
 
 main section h1{
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     font-size: 48px;
     margin: 0;
     margin-bottom: 0.5rem;
@@ -65,7 +56,7 @@ main section h4{
     margin: 0;
 }
 
-main section button{
+main section button, main section .btn{
     margin: 0 3px;
     margin-top: 2rem;
     color: white;
@@ -81,14 +72,23 @@ main section button{
     transition: transform 100ms linear, box-shadow 100ms linear;
 }
 
-main section button:hover{
+main section .back-button-style{
+    color: #555;
+    background-color: transparent;
+    margin: 0;
+    box-shadow: none;
+    padding: 0;
+    color: black;
+}
+
+main section button:hover, main section .btn:hover{
     cursor: pointer;
     transform: translateY(4px);
     box-shadow: inset 2px 2px 7px rgba(0, 0, 0, 0.2);
 }
 
 main .iframe-wrapper{
-    padding: 2rem 0;
+    padding: 1rem 0;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #ddd;
     width: 100%;
@@ -139,6 +139,27 @@ main .market-container{
     flex-wrap: wrap;
     max-width: 100%;
     overflow: auto;
+}
+
+main .guide-profile{
+    
+}
+
+main .guide-profile .cover-picture{
+    position: relative;
+    width: 100%;
+    min-height: 250px;
+    background-color: #555;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-image: url("../../resources/images/scene2.png");
+}
+
+main .guide-profile .profile-picture{
+    position: absolute;
+    bottom: -50px;
+    left: 2rem;
 }
 
 /* For PC Users Only */

@@ -12,7 +12,7 @@ main nav{
     padding: 0.8rem 1rem 1.5rem;
 }
 
-main nav button{
+main nav button, main nav .navigationbar-btn{
     padding: 2rem !important;
     color: white;
     font-size: 20px !important;
@@ -30,22 +30,22 @@ main nav div.navigations{
     /* justify-content: space-around; */
 }
 
-main nav div.navigations button{
+main nav div.navigations .navigationbar-btn{
     margin: 2px auto;
 }
 
-main nav div.navigations button > i{
+main nav div.navigations .navigationbar-btn > i{
     padding: 0 1.5rem 0 0 !important;
 }
 
-main nav div.navigations button > span{
+main nav div.navigations .navigationbar-btn > span{
     padding-right: 0.5rem;
     font-size: 15px;
     text-transform: capitalize;
     text-align: left;
 }
 
-main nav div.navigations button:hover{
+main nav div.navigations .navigationbar-btn:hover{
     /* transform: scale(1.08); */
     font-size: 23px !important;
     border-radius: 8px;
