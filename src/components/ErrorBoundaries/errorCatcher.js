@@ -1,5 +1,5 @@
 import React from "react";
-import AppHeader from "../Headers";
+import AppHeader from "../Header";
 import ToggleFSButton from "../../common/Fullscreentogglerbutton";
 
 class ErrorCatcher extends React.Component {
