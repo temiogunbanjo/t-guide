@@ -5,6 +5,7 @@ export const data = [
         uuid: '1234',
         image: profilePic,
         name: "Mr Person 1",
+        title: "Vice Chairman Of Cherubim",
         rating: 4.5,
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum assumenda ut, facilis, soluta autem vero earum suscipit consectetur in officiis sint possimus adipisci velit eos. Quis quos eius excepturi eveniet?"
     },

@@ -8,12 +8,12 @@ import "./resources/styles/clamp.min.css";
 import backgroundVideo from "./resources/videos/Ghana Drone Tour.mp4";
 
 // import react components
-import PointerBox from "./components/pointerbox";
-import ToggleFSButton from "./components/fullscreentogglerbutton";
-import AppHeader from "./components/header";
-import MainComponent from "./components/main";
+import PointerBox from "./common/PointerBox";
+import ToggleFSButton from "./common/Fullscreentogglerbutton";
+import AppHeader from "./components/Header";
+import MainComponent from "./components/Main";
 
-import ErrorCatcher from "./errorBoundaries/errorCatcher";
+import ErrorCatcher from "./components/ErrorBoundaries/errorCatcher";
 import AppContextProvider from "./context/contextProvider";
 
 class App extends React.Component {
@@ -37,7 +37,7 @@ class App extends React.Component {
     return (
       <AppContextProvider>
         <ErrorCatcher>
-          <PointerBox text="Click here to contact us" />
+          <PointerBox text="Search for a destination" />
           <AppHeader />
           <MainComponent
             backgroundVideo={backgroundVideo}

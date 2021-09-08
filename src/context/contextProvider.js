@@ -2,7 +2,7 @@ import React from "react";
 import AppContext from "./appContext";
 
 // ALL SECTIONS THAT CAN BE NAVIGATED TO
-const NAVIGATIONSECTIONS = [
+const NAVIGATION_SECTIONS = [
   {
     name: "Home",
     icon: "icofont-home",
@@ -41,9 +41,9 @@ const NAVIGATIONSECTIONS = [
     },
   },
   {
-    name: "Virtual Experience",
-    icon: "icofont-lens",
-    url: "/virtual",
+    name: "Contact Us",
+    icon: "icofont-users-alt-5",
+    url: "/contact",
     isInNavigationBar: true,
     init: (options) => {
       // Do something when section is selected
@@ -77,18 +77,41 @@ const NAVIGATIONSECTIONS = [
       return options;
     },
   },
+  {
+    name: "Our Team",
+    icon: "icofont-users-alt-5",
+    url: "/team",
+    isInNavigationBar: false,
+    init: (options) => {
+      // Do something when section is selected
+      options = options ? options : {};
+      return options;
+    },
+  },
+  {
+    name: "Virtual Experience",
+    icon: "icofont-lens",
+    url: "/virtual",
+    isInNavigationBar: false,
+    init: (options) => {
+      // Do something when section is selected
+      options = options ? options : {};
+      console.log(3);
+      return options;
+    },
+  },
 ];
 
 class AppContextProvider extends React.Component {
   state = {
     currentSection: 0,
-    sectionInit: NAVIGATIONSECTIONS[0].init(),
+    sectionInit: NAVIGATION_SECTIONS[0].init(),
   };
 
   render() {
     return (
       <AppContext.Provider value={{
-        sections: NAVIGATIONSECTIONS,
+        sections: NAVIGATION_SECTIONS,
         currentSection: this.state.currentSection,
         sectionInit: this.state.sectionInit,
         navigationHandler: (ev) => {

@@ -1,12 +1,12 @@
 import "./guideitem.css";
 import React from "react";
 import { Link } from "react-router-dom";
-import Rating from "../Rating";
+import Rating from "../../common/Rating";
 
 function GuideItem(props) {
   const nameElementStyle = {
     textAlign: "left",
-    fontSize: "20px",
+    fontSize: "22px",
     fontWeight: "500",
     textTransform: "capitalize",
     margin: "0 0 0.5rem",
@@ -31,7 +31,7 @@ function GuideItem(props) {
         <span className="line-clamp line-clamp-5 description">
           {details.description}
         </span>
-        <Rating rating={details.rating}/>
+        <Rating rating={details.rating} styles={{marginTop: '0.8rem'}}/>
         <div className="rows button-container">
           <Link
             to={`/guides/${details.uuid}`}

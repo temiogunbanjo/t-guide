@@ -23,6 +23,18 @@ class DataRepo {
       }, 500)
     })
   }
+
+  static async getTeams(guideUuid) {
+    const { data } = require('./teamlist');
+    const response = (guideUuid) ? data.find(aGuide => {
+      return guideUuid === aGuide.uuid
+    }) : data;
+    return new Promise(resolve => {
+      setTimeout(() => {
+        resolve(response);
+      }, 500)
+    })
+  }
 }
 
 export default DataRepo

@@ -26,7 +26,7 @@ footer a:link{
 }
 
 /* For desktop users */
-@media only screen and (min-width:800px){
+@media only screen and (min-width:768px){
     footer{
         justify-content: center;
     }

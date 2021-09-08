@@ -7,7 +7,7 @@ function LandingSection(props) {
 
   useEffect(() => {
     appContext.setCurrentSection(0);
-  });
+  }, []);
 
   return (
     <AppContext.Consumer>
@@ -15,6 +15,7 @@ function LandingSection(props) {
         <div className="cols center">
           <h1>WELCOME TO TGUIDE</h1>
           <h4>Connecting you to the best of Ghana</h4>
+          <h5 style={{fontWeight: 300, marginTop: "0.5rem"}}><i>(The Grand African Adventure)</i></h5>
           <Link
             to="/destinations"
             className="btn"

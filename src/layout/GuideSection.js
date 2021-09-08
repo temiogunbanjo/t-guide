@@ -1,7 +1,7 @@
 import React from "react";
 import AppContext from '../context/appContext';
 
-import GuideItem from "../components/guideitem";
+import GuideItem from "../components/Guideitem";
 const GUIDES = require("../db/guideslist").data;
 
 class GuideSection extends React.Component{

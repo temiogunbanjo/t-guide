@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import AppContext from "../context/appContext";
-import Destination from "../components/destinationItem";
+import Destination from "../components/DestinationItem";
 
 const DESTINATIONS = require("../db/destinationlist").data;
 
@@ -9,7 +9,7 @@ function DestinationSection(props) {
 
   useEffect(() => {
     appContext.setCurrentSection(1);
-  });
+  }, []);
 
   console.log(appContext);
 

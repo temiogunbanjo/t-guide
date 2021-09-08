@@ -121,7 +121,7 @@
 }
 
 /* For desktop users */
-@media only screen and (min-width:800px){
+@media only screen and (min-width:768px){
     .preloader .preload-body{
         padding: 4rem;
         flex-direction: row;

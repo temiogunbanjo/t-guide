@@ -1,8 +1,81 @@
 header{
     width: 100%;
     justify-content: space-between;
-    align-items: center; 
-    padding: 1rem 5rem;
+    align-items: center;
+    padding-right: 1rem;
+    /* padding: 1rem 5rem; */
+}
+
+body.fullscreen header {
+  margin-top: -8rem;
+}
+
+header > *:first-child{
+  width: 100%;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 1rem 5rem;
+}
+
+header .dropdown-wrapper .dropdown-content{
+  top: 63px;
+  left: 0;
+  min-width: 200px;
+  width: auto;
+  height: auto;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+header .dropdown-content > *,
+header .dropdown-content .icon{
+  color: #ffffff !important;
+}
+
+header .dropdown-content > *{
+  align-items: center;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 300;
+  border-bottom: 1px solid rgb(20, 20, 20);
+}
+
+header .dropdown-content > *:hover,
+header .dropdown-content > *:hover .icon{
+  font-weight: 400;
+  color: var(--nav-primary-color) !important;
+}
+
+header .dropdown-content > *:hover{
+  /* background-color: rgba(23, 26, 31, 0.3); */
+}
+
+header .dropdown-content .icon{
+  height: 100%;
+}
+
+header .dropdown-content .icon:first-child{
+  margin-right: 1.8rem;
+}
+
+header .dropdown-content .icon:last-child{
+  margin-left: auto;
+}
+
+header .search-wrapper{
+  /* padding: 1rem; */
+  background-color: rgba(10, 10, 20, 0.85);
+  border: 1px solid rgb(38, 38, 48);
+  border-radius: 3px;
+}
+
+header input, header input + button{
+  color: white;
+  outline: none;
+  border: none;
+  padding: 1rem 2rem;
+  background-color: transparent;
 }
 
 .logo{
@@ -11,19 +84,30 @@ header{
     padding: 0 0.5rem;
     background-color: rgb(0, 0, 0);
     border-radius: 50%;
-    width: 8rem;
-    height: 8rem;
+    width: 6rem;
+    height: 6rem;
     object-fit: contain;
     object-position: top;
 }
 
-@media only screen and (max-width:800px){
+@media only screen and (max-width:768px){
     header{
+      flex-direction: column !important;
+    }
+
+    header > *:first-child{
       flex-direction: row-reverse !important;
       padding-left: 3rem;
     }
-  
-    header *{
+
+    body.fullscreen header {
+      margin-top: -13.6rem;
+    }
+
+    header .search-bar-body{
+      width: 90%;
+      justify-content: space-between;
       /* border: 1px solid red; */
+      margin-bottom: 1.5rem;
     }
 }

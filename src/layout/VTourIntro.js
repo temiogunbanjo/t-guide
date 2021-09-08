@@ -7,8 +7,8 @@ function VTourIntro(props) {
 
   useEffect(() => {
     document.querySelector('main').classList.toggle('no-video', true);
-    appContext.setCurrentSection(3);
-  });
+    appContext.setCurrentSection(7);
+  }, []);
   
   return (
     <AppContext.Consumer>

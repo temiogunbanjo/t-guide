@@ -1,6 +1,11 @@
 /* Desktop First */
 main{
-    height: calc(100% - 17rem);
+    height: calc(100vh - 14rem);
+    /* border: 1px solid red; */
+}
+
+main .association-svg path{
+    fill:#999;
 }
 
 main section{
@@ -15,7 +20,7 @@ main section{
     clip-path: circle(0 at 10% 40%);
     background-position: center;
     background-size: cover;
-    padding: 4rem 6%;
+    padding: 4rem 6% 7rem;
     transition: all 0.1s ease-in;
     /* border: 3px solid red; */
     overflow-y: auto;
@@ -53,6 +58,14 @@ main section h4{
     font-size: 24px;
     font-weight: 400;
     letter-spacing: 1px;
+    margin: 0;
+}
+
+main section h5{
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 700px;
+    /* letter-spacing: 1px; */
     margin: 0;
 }
 
@@ -107,11 +120,12 @@ main .virtual-tour-iframe{
 }
 
 main .destination-container, main .market-container{
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     margin-top: 2rem;
 }
 
 main .destination-container{
+    background-color: rgba(165, 165, 165, 0.4);
     max-width: calc(100% - 4rem);
     overflow: auto;
 }
@@ -142,66 +156,110 @@ main .market-container{
 }
 
 main .guide-profile{
-    
-}
-
-main .guide-profile .guide-rating-wrap{
-    margin-left: auto;
-    margin-right: 5rem;
-    /* border: 1px solid red; */
-    align-items: center;
-    color: white;
-    font-size: 1.6rem;
-    font-weight: 400;
+    text-align: left;
 }
 
 main .guide-profile .cover-picture{
     position: relative;
     width: 100%;
     min-height: 250px;
+    margin-bottom: 6rem;
     background-color: #555;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    background-image: url("../../resources/images/scene2.png");
+    /* backdrop-filter: blur(8px); */
+    background-image: url("../resources/images/scene2i.png");
 }
 
-/* main .guide-profile .cover-picture > *{
-    border: 1px solid red;
-} */
-
 main .guide-profile .profile-picture{
-    position: absolute;
-    bottom: -50px;
-    left: 2rem;
+    margin-left: 2.3rem;
+    margin-right: 3.3rem;
+    margin-top: auto;
+    margin-bottom: -3rem;
+    border: 3px solid #eee;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+main .guide-profile .profile-summary{
+    color: #f2f2f5;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+main .guide-profile .profile-name{
+    align-items: center;
+    /* color:; */
+}
+
+main .guide-profile .guide-rating-wrap{
+    margin-left: auto;
+    margin-right: 5rem;
+    /* border: 1px solid red; */
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+main .guide-profile .guide-detail-label{
+    letter-spacing: 0;
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    width: 100%;
+    padding-bottom: 2px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ccc;
 }
 
 /* For PC Users Only */
-@media only screen and (min-width:801px){
+@media only screen and (min-width:769px){
 }
   
 /* For Mobile Users Only */
-@media only screen and (max-width:800px){
+@media only screen and (max-width: 768px){
     main{
         min-height: calc(100% - 17rem);
-        height: auto;
+        /* height: auto; */
     }
     main section {
         justify-content: flex-start !important;
     }
 
     main section > *{
-        height: auto;
+        /* height: auto; */
         min-height: 500px;
     }
 
+    main section > *.market-section-inner{
+        min-height: unset !important;
+    }
+
     main section h1, main section h4{
-        line-height: 1.3;
+        line-height: 1.2;
     }
 
     main section h1{
+        position: relative;
         letter-spacing: 2px;
         font-size: calc(29px + 0.5vw);
+    }
+
+    main *.market-section-inner h1{
+        margin-bottom: 3rem;
+    }
+
+    main *.market-section-inner h1::after{
+        content: '';
+        position: absolute;
+        border: 2px solid rgb(255, 102, 0);
+        width: 60px;
+        top: 45px;
+        left: 50%;
+        border-radius: 2px;
+        transform: translateX(-50%);        
     }
     
     main section h4{
@@ -209,6 +267,10 @@ main .guide-profile .profile-picture{
         font-weight: 400;
         letter-spacing: 0;
         margin: 0.8rem;
+    }
+
+    main *.market-section-inner h4{
+        font-weight: 300 !important;
     }
 
     main .market-container{

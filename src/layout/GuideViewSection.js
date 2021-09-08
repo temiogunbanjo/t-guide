@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import AppContext from "../context/appContext";
 import DataRepo from "../db/DataRepo";
 
-import Rating from "../components/Rating";
+import Rating from "../common/Rating";
 
 class GuideDetails extends React.Component {
   static contextType = AppContext;
@@ -12,6 +12,8 @@ class GuideDetails extends React.Component {
     super(props);
     this.state = {
       name: "",
+      title: "",
+      nick: "",
       description: "",
       image: "",
       location: "",
@@ -41,7 +43,7 @@ class GuideDetails extends React.Component {
           return (
             <div className="cols center guide-profile">
               <div
-                className="cols cover-picture"
+                className="rows cover-picture"
                 style={{ justifyContent: "space-between" }}
               >
                 <img
@@ -49,13 +51,18 @@ class GuideDetails extends React.Component {
                   src={this.state.image}
                   alt={this.state.name.toLowerCase()}
                   style={{
-                    borderRadius: "50%",
-                    width: "250px",
-                    height: "250px",
+                    borderRadius: "10px",
+                    width: "180px",
+                    height: "180px",
                   }}
                   crossOrigin="true"
                 />
-                <div></div>
+
+                <div className="cols profile-summary" style={{justifyContent: "center"}}>
+                  <h1 className="profile-name" style={{ marginBottom: "0" }}>{this.state.name}</h1>
+                  <span>{this.state.title || this.state.nick}</span>
+                </div>
+                
                 <div className="cols guide-rating-wrap">
                   <span
                     style={{
@@ -76,8 +83,7 @@ class GuideDetails extends React.Component {
                 </div>
               </div>
 
-              <h1 style={{ marginBottom: "0" }}>{this.state.name}</h1>
-              <span style={{ fontSize: "1.2rem", marginTop: "0.5rem" }}>About This Guide:</span>
+              <h4 className="guide-detail-label">About This Guide:</h4>
               <span style={{ fontSize: "1.6rem", marginTop: "0.5rem" }}>
                 {this.state.description}
               </span>

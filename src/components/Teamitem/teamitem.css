@@ -1,5 +1,5 @@
 
-main .guide-item{
+main .team-item{
     position: relative;
     flex: none;
     overflow: hidden;
@@ -9,21 +9,22 @@ main .guide-item{
     transition: all 0.3s ease;
 }
 
-main .guide-item:hover{
+main .team-item:hover{
     transform: translateY(-4px);
 }
 
-main .guide-item img{
-    width: 100%;
+main .team-item img{
+    width: 205px;
     height: 205px;
+    border-radius: 50%;
     background-color: #f1f1f4;
     text-align: center;
     object-fit: cover;
     object-position: center;
-    border-radius: 8px;
+    /* border-radius: 8px; */
 }
 
-main .guide-item .content{
+main .team-item .content{
     overflow: hidden;
     padding: 2.2rem 0 2rem;
     height: auto;
@@ -32,19 +33,30 @@ main .guide-item .content{
     transition: top 0.2s ease;
 }
 
-main .guide-item .description{
+main .team-item .description{
     font-size: 16px;
+    font-weight: 300;
     text-align: left;
     margin: 0 0 0.2rem;
     height: auto;
+    color: black;
 }
 
 
 /* For Mobile Users Only */
 @media only screen and (max-width:768px){
-    main .guide-item{
+    main .team-item{
         max-width: 500px;
         width: calc(100% - 3rem);
         margin: 1.5rem auto;
+    }
+
+    main .team-item img{
+       margin-left: auto;
+       margin-right: auto;
+    }
+    
+    main .team-item .content > *{
+        text-align: center !important;
     }
 }

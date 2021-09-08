@@ -7,7 +7,7 @@ function Destination(props) {
   const destinationId = props.details.name.replace(/\s+/g, "-").toLowerCase();
 
   return (
-    <div className="cols destination">
+    <div className="rows destination open">
       <img
         src={props.details.image}
         alt={props.details.name.toLowerCase()}

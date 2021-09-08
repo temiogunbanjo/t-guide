@@ -52,7 +52,7 @@ function Rating(props){
           array.push(pushValue);
           prevIndicator = pushValue;
         }
-        return array.map(val => <Star value={val}/>);
+        return array.map((val, index) => <Star key={`star-${index}`} value={val}/>);
       })() }
     </div>
   );
