@@ -10,7 +10,7 @@ export const data = [
         video: "https://www.youtube.com/embed/CmeqLpbj0I4",
         name: "Vume Pottery",
         description: "Vume is a small town in the South Tongu District of the Volta Region near Sogakope. The residents of Vume are well noted for the art of pottery.",
-        location: "https://goo.gl/maps/wszBtW3sfC2eeotZ8"
+        location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7935.813542553557!2d0.5461406241824955!3d6.00753858259557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1020e11397bee33f%3A0x37f8c9404644dfdd!2sVume%2C%20Ghana!5e0!3m2!1sen!2sng!4v1631366498511!5m2!1sen!2sng"
     },
     {
         image: [

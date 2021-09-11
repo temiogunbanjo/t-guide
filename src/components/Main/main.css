@@ -160,7 +160,7 @@ main .destination-details-section-inner img{
     max-width: 450px;
     object-fit: contain;
     margin: 1rem;
-    background-color: #444;
+    background-color: rgb(230, 230, 230);
 }
 
 main .market-container{
@@ -301,8 +301,6 @@ main .guide-profile .guide-detail-label{
     }
 
     main .destination-details-section-inner img{
-        display: block;
-        border-radius: 5px;
         width: 90%;
         height: auto;
         min-width: 100px;
