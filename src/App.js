@@ -14,7 +14,7 @@ import AppHeader from "./components/Header";
 import MainComponent from "./components/Main";
 
 import ErrorCatcher from "./components/ErrorCatcher";
-import AppContextProvider from "./context/ContextProvider";
+import AppContextProvider from "./context/ContextProviders";
 
 class App extends React.Component {
   constructor(props) {
