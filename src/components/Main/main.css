@@ -297,6 +297,7 @@ main .guide-profile .guide-detail-label{
 
     main .destination-container{
         background-color: transparent;
+        background-image: none;
     }
 
     main .destination-details-section-inner img{
