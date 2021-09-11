@@ -91,6 +91,7 @@ main section .back-button-style{
     margin: 0;
     box-shadow: none;
     padding: 0;
+    margin-bottom: 1rem;
     color: black;
 }
 
@@ -169,7 +170,7 @@ main .guide-profile .cover-picture{
     background-size: cover;
     background-position: bottom;
     /* backdrop-filter: blur(8px); */
-    background-image: url("../resources/images/scene2i.png");
+    background-image: url("../../resources/images/scene2i.png");
 }
 
 main .guide-profile .profile-picture{
@@ -189,13 +190,12 @@ main .guide-profile .profile-summary{
 
 main .guide-profile .profile-name{
     align-items: center;
-    /* color:; */
+    line-height: 1.2;
 }
 
 main .guide-profile .guide-rating-wrap{
     margin-left: auto;
     margin-right: 5rem;
-    /* border: 1px solid red; */
     justify-content: flex-end;
     align-items: center;
     color: white;
@@ -209,7 +209,7 @@ main .guide-profile .guide-detail-label{
     font-weight: 600;
     margin-top: 0.5rem;
     width: 100%;
-    padding-bottom: 2px;
+    padding-bottom: 4px;
     margin-bottom: 5px;
     border-bottom: 1px solid #ccc;
 }
@@ -266,20 +266,36 @@ main .guide-profile .guide-detail-label{
         font-size: 20px;
         font-weight: 400;
         letter-spacing: 0;
-        margin: 0.8rem;
+        margin: 0.8rem 0;
+    }
+
+    main section button, main section .btn{
+        padding: 1.2rem 3.6rem;
     }
 
     main *.market-section-inner h4{
         font-weight: 300 !important;
     }
 
+    main .destination-container{
+        background-color: transparent;
+    }
+
     main .market-container{
         max-width: calc(100% - 2rem);
     }
 
+    main .guide-profile{
+        min-height: unset;
+        margin-top: -1.5rem;
+    }
+
     main .guide-profile .cover-picture{
+        flex-direction: column !important;
         align-items: center;
-        height: auto;
+        height: auto !important;
+        max-height: unset;
+        min-height: unset;
         padding: 2rem 1rem;
     }
 
@@ -290,9 +306,15 @@ main .guide-profile .guide-detail-label{
     }
 
     main .guide-profile .profile-picture{
+        border-radius: 50% !important;
         position: relative;
         bottom: unset;
         left: unset;
+        margin-bottom: 2rem;
+    }
+
+    main .guide-profile .profile-name{
+        text-align: center;
     }
 }
 

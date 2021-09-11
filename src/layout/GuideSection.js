@@ -15,7 +15,7 @@ class GuideSection extends React.Component{
   render(){
     return (
       <div className="cols center market-section-inner">
-        <h1>Choose A Guide</h1>
+        <h1 style={{letterSpacing: "0 !important"}}>Choose A Guide</h1>
         <div className="rows market-container">
           {GUIDES.map((anItem, index) => {
             return (

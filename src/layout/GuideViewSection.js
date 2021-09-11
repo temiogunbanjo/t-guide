@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import AppContext from "../context/appContext";
-import DataRepo from "../db/DataRepo";
+import DataRepo from "../db/dataRepos";
 
 import Rating from "../common/Rating";
 
@@ -41,7 +41,7 @@ class GuideDetails extends React.Component {
         {(context) => {
           const isRated = this.state.rating > 0;
           return (
-            <div className="cols center guide-profile">
+            <div className="cols guide-profile">
               <div
                 className="rows cover-picture"
                 style={{ justifyContent: "space-between" }}
@@ -84,7 +84,7 @@ class GuideDetails extends React.Component {
               </div>
 
               <h4 className="guide-detail-label">About This Guide:</h4>
-              <span style={{ fontSize: "1.6rem", marginTop: "0.5rem" }}>
+              <span style={{ fontSize: "1.6rem", marginTop: "0.5rem", width: "100%" }}>
                 {this.state.description}
               </span>
               <Link

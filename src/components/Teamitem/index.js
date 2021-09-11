@@ -13,30 +13,64 @@ function TeamItem(props) {
   const { details } = props;
 
   return (
-    <div className="cols team-item">
+    <div className="cols center team-item border">
       <img
         src={details.image}
         alt={details.name.toLowerCase()}
         className="rows center"
       />
+      <div className="rows center contacts">
+        {/* <a href='#'
+          target='_blank'
+          className="rows center"
+          style={{padding: '0.5rem !important'}}
+        >
+          <i className='icofont-phone' style={{marginRight: '1rem'}}></i>
+          <span>Call</span>
+        </a> */}
+
+        <a href={details.contacts['linkedin']}
+          target='_blank'
+          className="rows center"
+          style={{padding: '0.5rem !important'}}
+        >
+          <i className='icofont-linkedin' style={{marginRight: '1rem'}}></i>
+          <span>LinkedIn</span>
+        </a>
+      </div>
       <div className="cols content">
         <span className="name" style={nameElementStyle}>
           {details.name}
         </span>
-        <span
+        <h5
           className="title"
           style={{
-            textAlign: "left",
-            fontSize: "14px",
-            marginTop: "0.5rem",
-            marginBottom: "1.5rem",
+            textAlign: "center",
+            fontSize: "15px",
+            marginTop: "0.3rem",
           }}
         >
           {details.title}
+        </h5>
+        <span
+          className="nick"
+          style={{
+            fontWeight: '500',
+            textAlign: "center",
+            fontSize: "14px",
+            marginTop: "0.5rem"
+          }}
+        >
+          {`(${details.nick})`}
         </span>
-        <span className="line-clamp line-clamp-5 description">
-          {details.description}
-        </span>
+        <img
+          className='emoticon'
+          src={details.emoticon}
+          alt=""
+          onClick={
+            ((ev) => {ev.currentTarget.classList.toggle('open')})
+          }
+        />
       </div>
     </div>
   );

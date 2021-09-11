@@ -26,6 +26,7 @@ function DestinationSection(props) {
               return (
                 <Destination
                   key={index}
+                  number={index + 1}
                   handler={context.navigationHandler}
                   details={aDestination}
                 />

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import AppContext from "../context/appContext";
-import DataRepo from "../db/DataRepo";
+import DataRepo from "../db/dataRepos";
 
 class VTourSection extends React.Component {
   constructor(props){

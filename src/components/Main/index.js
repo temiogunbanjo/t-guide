@@ -2,18 +2,18 @@ import "./main.css";
 
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import AppContext from "../context/appContext";
+import AppContext from "../../context/appContext";
 
-import Navigation from "./NavigationBar";
-import LandingSection from "../layout/LandingSection";
-import DestinationSection from "../layout/DestinationSection";
-import DestinationDetails from "../layout/DestinationViewSection";
-import GuideSection from "../layout/GuideSection";
-import GuideDetails from "../layout/GuideViewSection";
-import VTourSection from "../layout/VTourSection";
-import VTourIntro from "../layout/VTourIntro";
-import TeamSection from "../layout/TeamSection";
-import ContactSection from "../layout/ContactSection";
+import Navigation from "../NavigationBar";
+import LandingSection from "../../layout/LandingSection";
+import DestinationSection from "../../layout/DestinationSection";
+import DestinationDetails from "../../layout/DestinationViewSection";
+import GuideSection from "../../layout/GuideSection";
+import GuideDetails from "../../layout/GuideViewSection";
+import VTourSection from "../../layout/VTourSection";
+import VTourIntro from "../../layout/VTourIntro";
+import TeamSection from "../../layout/TeamSection";
+import ContactSection from "../../layout/ContactSection";
 
 class MainComponent extends React.Component {
   constructor(props) {

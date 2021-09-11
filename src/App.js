@@ -13,8 +13,8 @@ import ToggleFSButton from "./common/Fullscreentogglerbutton";
 import AppHeader from "./components/Header";
 import MainComponent from "./components/Main";
 
-import ErrorCatcher from "./components/ErrorBoundaries/errorCatcher";
-import AppContextProvider from "./context/contextProvider";
+import ErrorCatcher from "./components/ErrorCatcher";
+import AppContextProvider from "./context/ContextProvider";
 
 class App extends React.Component {
   constructor(props) {

@@ -24,7 +24,7 @@ function Destination(props) {
             margin: "0 0 1.5rem",
           }}
         >
-          {props.details.name}
+          {`${props.number}. ${props.details.name}`}
         </span>
         <span className="line-clamp line-clamp-5 description">
           {props.details.description}
