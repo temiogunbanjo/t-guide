@@ -9,7 +9,7 @@ function Destination(props) {
   return (
     <div className="rows destination open">
       <img
-        src={props.details.image}
+        src={props.details.image[0]}
         alt={props.details.name.toLowerCase()}
         crossOrigin="true"
       />

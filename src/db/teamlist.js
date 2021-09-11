@@ -36,7 +36,7 @@ export const data = [
         emoticon: "https://emojipedia-us.s3.amazonaws.com/source/skype/289/ninja_1f977.png",
         description: "Lorem ipsum dolor colr et sor skskkdk sdndjnkdnknkds md nkdknjksdk",
         contacts: {
-            'linkedin': 'https://www.linkedin.com/in/godwin-france/'
+            'linkedin': 'https://www.linkedin.com/in/temiloluwa-ogunbanjo-719731168'
         }
     }
 ];

@@ -11,7 +11,7 @@ class DestinationDetails extends React.Component {
     this.state = {
       name: "",
       description: "",
-      image: "",
+      image: [],
       location: "",
     };
   }
@@ -28,6 +28,7 @@ class DestinationDetails extends React.Component {
     } = this.props;
     DataRepo.getDestinationDetails(params.destinationId).then((response) => {
       this.setState({ ...response });
+      console.log(response);
     });
   }
 
@@ -51,10 +52,10 @@ class DestinationDetails extends React.Component {
           >
             <i
               data-id="1"
-              className="icofont-arrow-left"
+              className="icofont-simple-left"
               style={{ fontSize: "1.8rem" }}
             ></i>
-            <span data-id="1" style={{ marginLeft: "0.5rem" }}>
+            <span data-id="1" style={{ marginLeft: "0.3rem" }}>
               Go back
             </span>
           </Link>
@@ -70,7 +71,7 @@ class DestinationDetails extends React.Component {
             </span>
             <i
               data-id="2"
-              className="icofont-arrow-right"
+              className="icofont-simple-right"
               style={{ fontSize: "1.8rem" }}
             ></i>
           </Link>
@@ -80,12 +81,16 @@ class DestinationDetails extends React.Component {
         <span style={{ width: "100%", textAlign: "left", fontSize: "16px" }}>
           {this.state.description}
         </span>
-        <div className="iframe-wrapper">
-          <img
-            src={this.state.image}
-            alt={this.state.name.toLowerCase()}
-            crossOrigin="true"
-          />
+        <div className="rows center iframe-wrapper">
+          {this.state.image.map((imgUrl, index) => {
+            return (
+              <img
+              src={imgUrl}
+              alt={this.state.name.toLowerCase()}
+              crossOrigin="true"
+            />
+            );
+          })}
         </div>
 
         <h4 style={{ width: "100%", textAlign: "left", letterSpacing: "0" }}>

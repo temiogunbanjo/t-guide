@@ -58,11 +58,16 @@ class GuideDetails extends React.Component {
                   crossOrigin="true"
                 />
 
-                <div className="cols profile-summary" style={{justifyContent: "center"}}>
-                  <h1 className="profile-name" style={{ marginBottom: "0" }}>{this.state.name}</h1>
+                <div
+                  className="cols profile-summary"
+                  style={{ justifyContent: "center" }}
+                >
+                  <h1 className="profile-name" style={{ marginBottom: "0" }}>
+                    {this.state.name}
+                  </h1>
                   <span>{this.state.title || this.state.nick}</span>
                 </div>
-                
+
                 <div className="cols guide-rating-wrap">
                   <span
                     style={{
@@ -84,7 +89,13 @@ class GuideDetails extends React.Component {
               </div>
 
               <h4 className="guide-detail-label">About This Guide:</h4>
-              <span style={{ fontSize: "1.6rem", marginTop: "0.5rem", width: "100%" }}>
+              <span
+                style={{
+                  fontSize: "1.6rem",
+                  marginTop: "0.5rem",
+                  width: "100%",
+                }}
+              >
                 {this.state.description}
               </span>
               <Link
