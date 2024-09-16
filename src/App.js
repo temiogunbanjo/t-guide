@@ -5,15 +5,15 @@ import "./App.css";
 import "./resources/styles/clamp.min.css";
 
 // import other resources
-import backgroundVideo from "./resources/videos/Ghana Drone Tour.mp4";
+// import backgroundVideo from "./resources/videos/Ghana Drone Tour.mp4";
 
 // import react components
-import PointerBox from "./common/PointerBox";
-import ToggleFSButton from "./common/Fullscreentogglerbutton";
 import AppHeader from "./components/Header";
+import PointerBox from "./common/PointerBox";
 import MainComponent from "./components/Main";
-
 import ErrorCatcher from "./components/ErrorCatcher";
+import ToggleFSButton from "./common/Fullscreentogglerbutton";
+
 import AppContextProvider from "./context/ContextProviders";
 
 class App extends React.Component {
@@ -40,7 +40,7 @@ class App extends React.Component {
           <PointerBox text="Search for a destination" />
           <AppHeader />
           <MainComponent
-            backgroundVideo={backgroundVideo}
+            // backgroundVideo={backgroundVideo}
             navigationHandler={this.navigationHandler}
           />
           <ToggleFSButton />

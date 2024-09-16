@@ -68,21 +68,15 @@ class MainComponent extends React.Component {
                       component={VTourSection}
                     />
 
-                    <Route
-                      path="/team"
-                      component={TeamSection}
-                    />
+                    <Route path="/team" component={TeamSection} />
 
-                    <Route
-                      path="/contact"
-                      component={ContactSection}
-                    />
+                    <Route path="/contact" component={ContactSection} />
                   </Switch>
                 </section>
               </Router>
 
               <video autoPlay muted loop id="page-background-video">
-                <source src={this.props.backgroundVideo} type="video/mp4" />
+                <source src={"https://res.cloudinary.com/https-oneunivers-herokuapp-com/video/upload/f_auto:video,q_auto/rcsz7gwarjlgm11lui88"} type="video/mp4" />
               </video>
             </main>
           );

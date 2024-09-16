@@ -85,10 +85,10 @@ class DestinationDetails extends React.Component {
           {this.state.image.map((imgUrl, index) => {
             return (
               <img
-              src={imgUrl}
-              alt={this.state.name.toLowerCase()}
-              crossOrigin="true"
-            />
+                src={imgUrl}
+                alt={this.state.name.toLowerCase()}
+                crossOrigin="true"
+              />
             );
           })}
         </div>

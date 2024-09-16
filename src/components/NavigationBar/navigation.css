@@ -1,82 +1,80 @@
-
-main nav{
-    /* display: none !important; */
-    z-index: +500;
-    width: 100%;
-    position: fixed;
-    bottom: -1.2rem;
-    left: 0;
-    background-color: var(--primary-color);
-    border-radius: 100%/30%;
-    overflow-y: hidden;
-    padding: 0.8rem 1rem 1.5rem;
+main nav {
+  /* display: none !important; */
+  z-index: +500;
+  width: 100%;
+  position: fixed;
+  bottom: -1.2rem;
+  left: 0;
+  background-color: var(--primary-color);
+  border-radius: 100%/30%;
+  overflow-y: hidden;
+  padding: 0.8rem 1rem 1.5rem;
 }
 
-main nav button, main nav .navigationbar-btn{
-    padding: 2rem !important;
-    color: white;
-    font-size: 20px !important;
-    font-weight: 300;
-    background-color: transparent;
-    border: none;
-    transform-origin: center;
-    transition: font-size 0.2s ease-in;
-    justify-content: flex-start;
-    align-items: center;
+main nav button,
+main nav .navigationbar-btn {
+  padding: 2rem !important;
+  color: white;
+  font-size: 20px !important;
+  font-weight: 300;
+  background-color: transparent;
+  border: none;
+  transform-origin: center;
+  transition: font-size 0.2s ease-in;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-main nav div.navigations{
-    width: 100%;
-    /* justify-content: space-around; */
+main nav div.navigations {
+  width: 100%;
+  /* justify-content: space-around; */
 }
 
-main nav div.navigations .navigationbar-btn{
-    margin: 2px auto;
+main nav div.navigations .navigationbar-btn {
+  margin: 2px auto;
 }
 
-main nav div.navigations .navigationbar-btn > i{
-    padding: 0 1.5rem 0 0 !important;
+main nav div.navigations .navigationbar-btn > i {
+  padding: 0 1.5rem 0 0 !important;
 }
 
-main nav div.navigations .navigationbar-btn > span{
-    padding-right: 0.5rem;
-    font-size: 15px;
-    text-transform: capitalize;
-    text-align: left;
+main nav div.navigations .navigationbar-btn > span {
+  padding-right: 0.5rem;
+  font-size: 12px;
+  text-transform: capitalize;
+  text-align: left;
 }
 
-main nav div.navigations .navigationbar-btn:hover{
-    /* transform: scale(1.08); */
-    font-size: 23px !important;
-    border-radius: 8px;
-    /* background-color: rgb(5, 104, 197); */
-    box-shadow: inset 2px 2px 9px rgba(20, 8, 8, 0.3);
-    color: var(--nav-primary-color);
+main nav div.navigations .navigationbar-btn:hover {
+  /* transform: scale(1.08); */
+  font-size: 23px !important;
+  border-radius: 8px;
+  /* background-color: rgb(5, 104, 197); */
+  box-shadow: inset 2px 2px 9px rgba(20, 8, 8, 0.3);
+  color: var(--nav-primary-color);
 }
 
 /* For Mobile Users Only */
-@media only screen and (max-width:768px){
-    main nav button.scroller{
-        position: absolute;
-        padding: 1.9rem 1rem !important;
-        /* border: 3px solid red; */
-        background-color: var(--primary-color);
-    }
+@media only screen and (max-width: 768px) {
+  main nav button.scroller {
+    position: absolute;
+    padding: 1.9rem 1rem !important;
+    /* border: 3px solid red; */
+    background-color: var(--primary-color);
+  }
 
-    main nav div.navigations{
-        width: calc(100% - 5rem);
-        /* border: 3px solid red; */
-        margin: 0 auto;
-        overflow-x: auto;
-    }
+  main nav div.navigations {
+    width: calc(100% - 5rem);
+    /* border: 3px solid red; */
+    margin: 0 auto;
+    overflow-x: auto;
+  }
 
-    main nav button.scroller:first-child{
-        left: 0;
-    }
+  main nav button.scroller:first-child {
+    left: 0;
+  }
 
-    main nav button.scroller:last-child{
-        right: 0;
-    }
+  main nav button.scroller:last-child {
+    right: 0;
+  }
 }
-
-
